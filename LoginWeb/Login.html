@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar sesión</title>
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="Login.css" />
+</head>
+<body>
+  <!--  La acción y el método se ajustarían en tu back-end;
+        aquí son solo demostrativos  -->
+  <form class="login-card" action="#" method="post">
+    <h1>Iniciar sesión</h1>
+
+    <div class="field">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario"
+             required autocomplete="username" />
+    </div>
+
+    <div class="field">
+      <label for="contrasena">Contraseña</label>
+      <input type="password" id="contrasena" name="contrasena"
+             required autocomplete="current-password" />
+    </div>
+
+    <!-- Enlace de recuperación -->
+    <p class="forgot-password">
+      <a href="#">Recuperar contraseña</a>
+    </p>
+
+    <!-- Botones -->
+    <div class="actions">
+      <button type="submit">Entrar</button>
+      <button type="button" class="secondary">Registrarse</button>
+    </div>
+  </form>
+</body>
+</html>

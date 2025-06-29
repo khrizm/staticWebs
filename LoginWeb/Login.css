@@ -1,0 +1,136 @@
+/* ---------------------- Reset mínimo ---------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------- Variables de tema ------------------- */
+:root {
+  --primary: #4f46e5;        
+  --primary-dark: #4338ca;   
+  --bg: #f3f4f6;             
+  --surface: #ffffff;        
+  --text: #1f2937;           
+  --radius: 0.75rem;
+  --shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+
+body {
+  min-height: 100dvh;           /* ocupa toda la ventana */
+  display: grid;
+  place-items: center;          /* centra la tarjeta */
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* --------------------- Tarjeta login ---------------------- */
+.login-card {
+  width: min(90%, 380px);
+  padding: 2.5rem 2rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* ----------------------- Campos --------------------------- */
+.field { margin-bottom: 1.25rem; }
+
+label {
+  display: block;
+  font-size: .875rem;
+  margin-bottom: .5rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: .75rem .875rem;
+  border: 1px solid #d1d5db;      
+  border-radius: var(--radius);
+  font-size: 1rem;
+  transition: border-color .2s;
+}
+
+input:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99,102,241,.25); 
+}
+
+/* --------------- Recuperar contraseña link ---------------- */
+.forgot-password {
+  text-align: right;
+  margin-top: .25rem;
+  margin-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.forgot-password a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+  color: var(--primary-dark);
+}
+
+/* --------------------- Botones ---------------------------- */
+.actions { display: grid; gap: .75rem; }
+
+button {
+  width: 100%;
+  padding: .75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background .2s, color .2s, border-color .2s;
+}
+
+/* Botón principal */
+button[type="submit"] {
+  color: #fff;
+  background: var(--primary);
+  border: none;
+}
+
+button[type="submit"]:hover { background: var(--primary-dark); }
+
+/* Botón secundario */
+button.secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+button.secondary:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* ----------- Tema oscuro automático (sistema) ------------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111827;        
+    --surface: #1f2937;   
+    --text: #f9fafb;      
+    --shadow: 0 10px 25px rgba(0,0,0,.4);
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    background: #374151;   
+    border-color: #4b5563; 
+    color: var(--text);
+  }
+}
