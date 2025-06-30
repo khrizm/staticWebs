@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demostración de HTML & CSS</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="#" class="logo">WebSite</a>
+      <ul class="menu">
+        <li><a href="#inicio">Home</a></li>
+        <li>
+          <a href="#Knowledge">Knowledge ▾</a>
+          <ul class="dropdown">
+            <li><a href="#Languages">Languages</a></li>
+            <li><a href="#Frameworks">Frameworks</a></li>
+            <li><a href="#Me">Me</a></li>
+          </ul>
+        </li>
+        <li><a href="#Gallery">Gallery</a></li>
+        <li><a href="#contact">About Me</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="container">
+    <h1>HTML & CSS Demo</h1>
+    <p>A static page made only with HTML and CSS showing a drop-down menu and a modern responsive design.</p>
+    <a href="#Knowledge" class="btn">Browse</a>
+  </div>
+</section>
+
+<section class="features" id="Knowledge">
+  <div class="container">
+    <h2 style="text-align:center;margin-bottom:2rem;">Knowledge & Experience</h2>
+    <div class="features-grid">
+      <article class="card" id="Languages">
+        <h3>Languages</h3>
+        <p>I am experienced with the following programming languages: Java, Python, PHP, AnsiC, JavaScript, TypeScript.</p>
+      </article>
+      <article class="card" id="Frameworks">
+        <h3>Frameworks</h3>
+        <p>I have been able to work with the following frameworks: Angular, Vue, Laravel, Boostrap, React, Django.</p>
+      </article>
+      <article class="card" id="Me">
+        <h3>Me</h3>
+        <p>I am a software developer who has 4 years of experience, both work and school experience. I am open to learn new languages and I am very versatile.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="Gallery">
+  <div class="container">
+    <h2 style="text-align:center;margin-bottom:2rem;">Gallery</h2>
+  </div>
+  <div class="gallery">
+    <img src="https://jahazielponce.com/wp-content/uploads/python.png" alt="python">
+    <img src="https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png" alt="java">
+    <img src="https://pbs.twimg.com/media/CsggDViXEAAciLJ.jpg" alt="vuejs">
+    <img src="https://webol.co.uk/wp-content/uploads/2024/12/62a4c8c5fdee15d2905007ca.png" alt="laravel">
+    <img src="https://img.icons8.com/color/512/django.png" alt="django">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0-wnQQShczpqLhHmGImNKVTt9uAWsA93uxw&s" alt="angular">
+  </div>
+</section>
+
+<section id="contact" class="features">
+  <div class="container">
+    <h2 style="text-align:center;margin-bottom:2rem;">Contact</h2>
+    <p style="text-align:center;max-width:50ch;margin-inline:auto;">For Work or Projects: christiamgeovanny@hotmail.com.</p>
+    <p style="text-align:center;max-width:50ch;margin-inline:auto;">LinkedIn: <a href="https://www.linkedin.com/in/christiam-murillo-ramirez/">Christiam Murillo R.</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © 2025 khriz · Software Developer
+  </div>
+</footer>
+
+</body>
+</html>
