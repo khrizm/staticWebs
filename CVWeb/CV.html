@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV | Christiam Murillo</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="CV.css" />
+  </head>
+  <body>
+    <!-- Radios para seleccionar idioma, ocultos -->
+    <input type="radio" name="lang" id="lang-es" checked hidden />
+    <input type="radio" name="lang" id="lang-en" hidden />
+
+    <!-- Selector de idioma -->
+    <div class="lang-switcher" role="navigation" aria-label="Language switcher">
+      <label for="lang-es" class="lang-btn" aria-label="Mostrar Español">ES</label>
+      <label for="lang-en" class="lang-btn" aria-label="Show English">EN</label>
+    </div>
+
+    <!-- Contenido en Español -->
+    <div class="lang lang-es" lang="es">
+      <header>
+        <div>
+          <h1>Christiam Murillo R.</h1>
+          <p>Ingeniero de Software | Desarrollador Full‑Stack</p>
+        </div>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="#about">Acerca de mí</a></li>
+          <li><a href="#studies">Estudios</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certificaciones</a></li>
+          <li><a href="#languages">Lenguajes</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <!-- About -->
+        <section id="about" class="about">
+          <h2>Acerca de mí</h2>
+          <p>
+            Desarrollador de software con experiencia en proyectos de distintas escalas, utilizando diversos lenguajes y frameworks. Me adapto con facilidad a nuevos entornos, soy autodidacta y disfruto trabajar en equipo. Apasionado por el aprendizaje constante y la creación de soluciones eficientes que generen impacto real.
+          </p>
+        </section>
+
+        <!-- Studies -->
+        <section id="studies">
+          <h2>Estudios</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Ingeniería en Software</h3>
+              <span>Universidad de Guayaquil — 2025‑2030</span>
+              <p>
+                Estudiante en Ingeniería en Software.
+                Segundo Semestre. 
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3>Técnologo Superior en Desarrollado de Software</h3>
+              <span>Instituto Superior Tecnologico Guayaquil — 2021-2024</span>
+              <p>
+                Titulado en Desarrollado de Software.
+                Título de Tercer Nivel. 
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+          <h2>Experiencia</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Ingeniero Tecnico Junior de Desarrollo</h3>
+              <span>2024 ‑ Presente</span>
+              <p>
+               "Fabrica de Software" para Banco Bolivariano.
+                Experiencia en arquitectura y migración de microservicios utilizando Java 17 y Spring Boot 3. Desarrollo de servicios REST y SOAP, con pruebas funcionales usando SoapUI. Implementación de pruebas unitarias e integración. Desarrollo en AWS con Glue, Lambda, S3 y CodePipeline. Remediación de vulnerabilidades con SonarQube, Veracode y Prisma.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3>Pasante de Desarrollo de Software</h3>
+              <span>2024 ‑ 2024</span>
+              <p>
+                Desarrollador Frontend con Angular 8 y TypeScript. Desarrollo de interfaces visuales y funcionales utilizando Bootstrap y SCSS. Consumo de servicios y APIs. Pruebas de funcionalidad de acuerdo con los requerimientos establecidos.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3>Pasante</h3>
+              <span>2023 ‑ 2023</span>
+              <p>
+                Desarrollador Web con experiencia en Vue.js y Laravel. Análisis y migración de una aplicación de escritorio a web. Desarrollo de interfaces web utilizando CSS. Pruebas exhaustivas de frontend y backend. Manejo de bases de datos. Soporte técnico para impresoras y computadoras.              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+          <h2>Skills</h2>
+          <div class="skills">
+            <div class="skill">AWS</div>
+            <div class="skill">Java</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">Angular</div>
+            <div class="skill">Django</div>
+            <div class="skill">Laravel</div>
+            <div class="skill">PHP</div>
+            <div class="skill">Vuejs</div>
+            <div class="skill">Spring boot</div>
+            <div class="skill">TypeScript</div>
+            <div class="skill">Sybase</div>
+            <div class="skill">SQL</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Jira</div>
+            <div class="skill">Confluence</div>
+            <div class="skill">Slack</div>
+            <div class="skill">Git &amp; GitHub</div>
+          </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications">
+          <h2>Certificaciones</h2>
+          <details>
+            <summary>Github Foundations</summary>
+            <p>GitHub — 2024</p>
+          </details>
+        </section>
+
+        <!-- Languages -->
+        <section id="languages">
+          <h2>Lenguajes</h2>
+          <details>
+            <summary>Español</summary>
+            <p>Nativo</p>
+          </details>
+          <details>
+            <summary>Inglés</summary>
+            <p>Avanzado (B2)</p>
+          </details>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+          <h2>Contacto</h2>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                />
+              </svg>
+              <span>christiamgeovanny@hotmail.com</span>
+            </div>
+            <div class="contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+               <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.368-1.852 3.598 0 4.263 2.368 4.263 5.448v6.295zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.967 20.452H3.71V9h3.257v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+              </svg>
+              <a href="https://www.linkedin.com/in/christiam-murillo-ramirez/" target="_blank"
+                >LinkedIn</a
+              >
+            </div>
+            <div class="contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 .5C5.648.5.5 5.648.5 12c0 5.077 3.292 9.38 7.875 10.894.575.105.786-.25.786-.556 0-.274-.01-1-.015-1.963-3.205.696-3.88-1.546-3.88-1.546-.523-1.33-1.277-1.686-1.277-1.686-1.042-.713.08-.698.08-.698 1.152.081 1.758 1.183 1.758 1.183 1.025 1.757 2.69 1.25 3.345.955.103-.743.402-1.25.73-1.538-2.557-.291-5.248-1.278-5.248-5.682 0-1.255.448-2.28 1.183-3.085-.119-.29-.512-1.462.112-3.048 0 0 .965-.309 3.162 1.177A10.985 10.985 0 0112 6.85c.976.004 1.956.132 2.876.386 2.194-1.486 3.157-1.177 3.157-1.177.626 1.586.233 2.758.115 3.048.735.806 1.182 1.83 1.182 3.085 0 4.414-2.696 5.388-5.26 5.674.412.356.778 1.058.778 2.131 0 1.538-.015 2.777-.015 3.156 0 .309.207.667.792.554C20.71 21.382 24 17.076 24 12c0-6.352-5.148-11.5-11.5-11.5z"
+                />
+              </svg>
+              <a href="https://github.com/khrizm" target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        © 2025 Christiam Murillo — Curriculum Vitae
+      </footer>
+    </div>
+
+    <!-- Contenido en Inglés -->
+    <div class="lang lang-en" lang="en">
+      <header>
+        <div>
+          <img
+            src="https://placehold.co/120x120.png"
+            alt="Photo of Christiam Murillo"
+            class="avatar"
+          />
+        </div>
+        <div>
+          <h1>Christiam Murillo R.</h1>
+          <p>Software Engineer | Full‑Stack Developer</p>
+        </div>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="#about2">About Me</a></li>
+          <li><a href="#studies2">Studies</a></li>
+          <li><a href="#experience2">Experience</a></li>
+          <li><a href="#skills2">Skills</a></li>
+          <li><a href="#certifications2">Certifications</a></li>
+          <li><a href="#languages2">Languages</a></li>
+          <li><a href="#contact2">Contact</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <!-- About -->
+        <section id="about2" class="about">
+          <h2>About Me</h2>
+          <p>
+            Software developer with experience in projects of various scales, using multiple languages and frameworks. Quick to adapt to new environments, self-taught, and a strong team player. Passionate about continuous learning and creating efficient solutions that deliver real impact.
+          </p>
+        </section>
+
+        <!-- Studies -->
+        <section id="studies2">
+          <h2>Studies</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Software Engineering</h3>
+              <span>Universidad de Guayaquil — 2025‑2030</span>
+              <p>
+                Student in Software Engineering.
+                Second Semester.              
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3>Software Development Technician</h3>
+              <span>Instituto Superior Tecnologico Guayaquil — 2021-2024</span>
+              <p> Degree in Software Development.
+                Third Level Degree.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience2">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Junior Technical Development Engineer</h3>
+              <span>2024 ‑ Present</span>
+              <p>
+                "Fabrica de Software" for Banco Bolivariano.
+                Experience in microservices architecture and migration using Java 17 and Spring Boot 3. Development of REST and SOAP services, with functional testing using SoapUI. Implementation of unit and integration tests. Cloud development on AWS with Glue, Lambda, S3, and CodePipeline. Vulnerability remediation using SonarQube, Veracode, and Prisma.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3>Software Developer Internship</h3>
+              <span>2024 ‑ 2024</span>
+              <p>
+                Frontend Developer with Angular and TypeScript. Development of visual and functional interfaces using Bootstrap and SCSS. API and service consumption. Functionality testing based on given requirements.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3>Software Developer Internship</h3>
+              <span>2023 ‑ 2023</span>
+              <p>
+                Web Developer experienced with Vue.js and Laravel. Analyzed and migrated a desktop application to a web-based system. Developed web interfaces using CSS. Conducted thorough frontend and backend testing. Managed databases. Provided technical support for printers and computers.              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills2">
+          <h2>Skills</h2>
+          <div class="skills">
+            <div class="skill">AWS</div>
+            <div class="skill">Java</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">Angular</div>
+            <div class="skill">Django</div>
+            <div class="skill">Laravel</div>
+            <div class="skill">PHP</div>
+            <div class="skill">Vuejs</div>
+            <div class="skill">Spring boot</div>
+            <div class="skill">TypeScript</div>
+            <div class="skill">Sybase</div>
+            <div class="skill">SQL</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Jira</div>
+            <div class="skill">Confluence</div>
+            <div class="skill">Slack</div>
+            <div class="skill">Git &amp; GitHub</div>
+          </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications2">
+          <h2>Certifications</h2>
+          <details>
+            <summary>Github Foundations</summary>
+            <p>GitHub — 2024</p>
+          </details>
+        </section>
+
+        <!-- Languages -->
+        <section id="languages2">
+          <h2>Languages</h2>
+          <details>
+            <summary>Spanish</summary>
+            <p>Native</p>
+          </details>
+          <details>
+            <summary>English</summary>
+            <p>B2</p>
+          </details>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+          <h2>Contact</h2>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                />
+              </svg>
+              <span>christiamgeovanny@hotmail.com</span>
+            </div>
+            <div class="contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.368-1.852 3.598 0 4.263 2.368 4.263 5.448v6.295zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.967 20.452H3.71V9h3.257v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+              </svg>
+              <a href="https://www.linkedin.com/in/christiam-murillo-ramirez/" target="_blank"
+                >LinkedIn</a
+              >
+            </div>
+            <div class="contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 .5C5.648.5.5 5.648.5 12c0 5.077 3.292 9.38 7.875 10.894.575.105.786-.25.786-.556 0-.274-.01-1-.015-1.963-3.205.696-3.88-1.546-3.88-1.546-.523-1.33-1.277-1.686-1.277-1.686-1.042-.713.08-.698.08-.698 1.152.081 1.758 1.183 1.758 1.183 1.025 1.757 2.69 1.25 3.345.955.103-.743.402-1.25.73-1.538-2.557-.291-5.248-1.278-5.248-5.682 0-1.255.448-2.28 1.183-3.085-.119-.29-.512-1.462.112-3.048 0 0 .965-.309 3.162 1.177A10.985 10.985 0 0112 6.85c.976.004 1.956.132 2.876.386 2.194-1.486 3.157-1.177 3.157-1.177.626 1.586.233 2.758.115 3.048.735.806 1.182 1.83 1.182 3.085 0 4.414-2.696 5.388-5.26 5.674.412.356.778 1.058.778 2.131 0 1.538-.015 2.777-.015 3.156 0 .309.207.667.792.554C20.71 21.382 24 17.076 24 12c0-6.352-5.148-11.5-11.5-11.5z"
+                />
+              </svg>
+              <a href="https://github.com/khrizm" target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        © 2025 Christiam Murillo — Curriculum Vitae
+      </footer>
+    </div>
+  </body>
+</html>
