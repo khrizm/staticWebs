@@ -1,0 +1,306 @@
+:root {
+  /* Color palette */
+  --clr-bg: #0f172a;
+  --clr-surface: #1e293b;
+  --clr-primary: #0ea5e9;
+  --clr-primary-light: #38bdf8;
+  --clr-text: #f1f5f9;
+  --clr-muted: #94a3b8;
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 2rem;
+  --space-xl: 4rem;
+  /* Radius */
+  --radius: 0.75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  background: var(--clr-bg);
+  color: var(--clr-text);
+}
+
+/* Ocultar los radios */
+input[name="lang"] {
+  display: none;
+}
+
+/* Selector de idioma */
+.lang-switcher {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-m);
+  margin: var(--space-m);
+}
+
+.lang-btn {
+  padding: var(--space-xs) var(--space-m);
+  border-radius: var(--radius);
+  background: var(--clr-surface);
+  color: var(--clr-text);
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease, color 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.lang-btn:hover,
+.lang-btn:focus {
+  background: var(--clr-primary);
+  color: var(--clr-bg);
+  outline: none;
+}
+
+/* Indicar botón seleccionado */
+#lang-es:checked ~ .lang-switcher label[for="lang-es"],
+#lang-en:checked ~ .lang-switcher label[for="lang-en"] {
+  background: var(--clr-primary);
+  color: var(--clr-bg);
+  border-color: var(--clr-primary-light);
+}
+
+/* Mostrar solo el contenido del idioma seleccionado */
+.lang {
+  display: none;
+}
+
+#lang-es:checked ~ .lang-es {
+  display: block;
+}
+
+#lang-en:checked ~ .lang-en {
+  display: block;
+}
+
+/* ---------- Layout ---------- */
+header {
+  display: flex;
+  flex-direction: column;  /* Apilar verticalmente */
+  align-items: center;     /* Centrar horizontalmente */
+  gap: var(--space-m);
+  padding: var(--space-xl) var(--space-m);
+  text-align: center;      /* Centrar texto */
+  background: var(--clr-surface);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+  width: 120px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--clr-primary);
+}
+
+/* Texto dentro del header */
+header > div:last-child {
+  display: block;
+}
+
+header h1 {
+  color: var(--clr-text);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+header p {
+  color: var(--clr-muted);
+  margin: 0;
+}
+
+/* Enlaces sin subrayado por defecto */
+a {
+  color: var(--clr-primary-light);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  background: rgba(15, 23, 42, 0.7);
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-s);
+  list-style: none;
+  padding: var(--space-s) var(--space-m);
+}
+
+nav li a {
+  display: block;
+  padding: var(--space-xs) var(--space-m);
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+nav li a:hover,
+nav li a:focus,
+nav li a:active,
+nav li a:target {
+  background: var(--clr-primary);
+}
+
+/* ---------- Main & Sections ---------- */
+main {
+  width: min(90%, 70rem);
+  margin-inline: auto;
+  padding-block: var(--space-xl);
+  display: grid;
+  gap: var(--space-xl);
+}
+
+section {
+  background: var(--clr-surface);
+  padding: var(--space-l);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-m);
+  color: var(--clr-primary-light);
+}
+
+/* ---------- About ---------- */
+.about p {
+  margin-bottom: var(--space-m);
+  color: var(--clr-muted);
+}
+
+/* ---------- Timeline Lists (Corrección) ---------- */
+.timeline {
+  position: relative;
+  padding-left: 2.5rem; /* Espacio para la línea y círculos */
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 1rem;  /* Ajustado para centrar la línea y círculos */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--clr-primary);
+  border-radius: 1px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--space-l);
+  padding-left: 1.5rem; /* Para que texto no quede encima del círculo */
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;  /* Centrado respecto a la línea vertical */
+  top: 0.5rem;   /* Centrado vertical con un poco de margen */
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--clr-primary);
+}
+
+/* Ajuste de texto de títulos y spans dentro timeline */
+.timeline-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-xs);
+}
+
+.timeline-item span {
+  font-size: 0.9rem;
+  color: var(--clr-muted);
+}
+
+/* ---------- Skills ---------- */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-m);
+}
+
+.skill {
+  background: var(--clr-bg);
+  padding: var(--space-m);
+  border-radius: var(--radius);
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.skill:hover {
+  background: var(--clr-primary);
+  transform: translateY(-4px) scale(1.02);
+}
+
+/* ---------- Social & Contact ---------- */
+.contact-grid {
+  display: grid;
+  gap: var(--space-m);
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+}
+.contact-item svg {
+  flex-shrink: 0;
+}
+
+/* ---------- Certifications & Languages ---------- */
+.details {
+  background: var(--clr-bg);
+  border-radius: var(--radius);
+  padding: var(--space-m);
+  margin-bottom: var(--space-s);
+}
+
+details {
+  background: var(--clr-bg);
+  border-radius: var(--radius);
+  padding: var(--space-m);
+  margin-bottom: var(--space-s);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+summary::marker,
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary {
+  color: var(--clr-primary-light);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: var(--space-l) var(--space-m);
+  color: var(--clr-muted);
+}
+
+/* ---------- Responsive Helpers ---------- */
